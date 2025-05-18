@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2b193a;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(212, 226, 11);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #08fdd8;;
+}
+
+
+body {
+    background-color: #151829;
+    color: burlywood;
+    padding: 0,0,0,0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #08fdd8;
+    margin-top: 100px;
+}
+
+h2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rm;
+    color: #d0fd08;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.8rm;
+    color:#0887fd;
+}
+
+p {
+    font-size: 1.5em;
+    /*color: rgb(251, 155, 58);*/
+
+}
+
+img {
+    width: 100%;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+.topnavbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: space-between;
+  align-content: space-between;
+  max-width: 100%;
+  min-width: 100%;
+ }
+
+
+.presentation {
+  font-size: 4rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  /*margin-left: 20px;*/
+  color: rgb(255, 254, 254);
+
+}
+
+/*Button on top*/
+.buttontop {
+    margin-top: 20px;
+}
+.button {
+    margin: 0;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+/*FIN DEL BOTON*/
+
+
+/*media queries*/
+@media all and (min-width:421px) and (max-width:768px){
+    .contentproyects{
+      justify-content: center;
+    }
+}
+
+@media all and (max-width:420px) {
+    .webdes {
+      min-width: 100%;
+    }
+}
+
+.content {
+    width: 100%;
+    min-width: 350px;
+    padding-left: 10px;
+    /*margin-left: 2%;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*section header*/
+.contentproyects{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.webdes {
+    /*min-width: 350px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 250px;
+    padding-left: 5px;
+
+}
+
+.webdes > p {
+    font-size:1em;
+    max-width: 420px;
+}
+
+.navright {
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 430px;
+}
+.navright a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: #d0fd08;
+}
+
+.navright a:hover {
+  color:#37FF8B;
+}
+
+.myself {
+    font-size: 1em;
+}
+
+.myname {
+    color: crimson;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.myname:hover {
+    color:rgb(157, 250, 7);
+    transition: color 2s ease;
+    font-size: +2em;
+}
+
+#contactme {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content:center;
+  align-content:center;
+  max-width: 100%;
+  min-width: 100%;
+  border: #d0fd08;
+  border-radius: 10px;
+  border-width: 10px;
+  border-style: solid;
+}
+  .sitefooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-content: space-between;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+
+
+
+
+
+
+
