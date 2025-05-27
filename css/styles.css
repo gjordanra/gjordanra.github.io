@@ -32,23 +32,26 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1 {
+h2 {
     font-size: 3.5em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #08fdd8;
     margin-top: 100px;
 }
 
-h2 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2rm;
-    color: #d0fd08;
-}
+
 
 h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.8rm;
     color:#0887fd;
+}
+
+h4 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 9rm;
+    color: #d0fd08;
+
 }
 
 p {
