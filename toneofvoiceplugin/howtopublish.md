@@ -1,4 +1,4 @@
-##How to Test Your Chrome Extension##
+## How to Test Your Chrome Extension
 To test your Chrome extension, follow these steps:
 
 Create a Folder: Create a new folder on your computer (e.g., ToneConverterExtension).
@@ -23,7 +23,8 @@ Paste a paragraph into the "Paste your paragraph here:" textbox.
 Select your desired language and tone of voice from the dropdowns.
 Click the "Convert Text" button.
 After a short delay (while the API call is made), the converted text will appear in the "Converted Text:" textbox.
-How to Publish Your Chrome Extension
+
+## How to Publish Your Chrome Extension
 Publishing your Chrome extension involves submitting it to the Chrome Web Store. Here's a general outline of the process:
 
 Create a Developer Account:
