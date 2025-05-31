@@ -1,4 +1,4 @@
-How to Test Your Chrome Extension
+##How to Test Your Chrome Extension##
 To test your Chrome extension, follow these steps:
 
 Create a Folder: Create a new folder on your computer (e.g., ToneConverterExtension).
