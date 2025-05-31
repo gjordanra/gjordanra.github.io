@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #f13197, #f89368);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgb(28, 65, 103);
+    background-color: #ffff;
+    #display {
+        color: #f016cc;
+        padding:  10px;
+        font-size: 2em;
+        height: 150px;
+        width: auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        font-weight: 700;
+
+    }
+    button {
+        height: 60px;
+        width: 60px;
+        border: 0px;
+        border-radius: 35px;
+        margin: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    #clear {
+        background-color: #ffd5d8;
+        color: #fc457c;
+        padding: 20px;
+        border-radius: 100px;
+    }
+    .btn-number {
+        background-color: #000066;
+        color:#f89368;
+        padding: 20px;
+        border-radius: 100px;
+
+    }
+    .btn-operador {
+        color:#31c5df;
+        background-color: #2064eb;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .btn-numberoperador {
+        color:#fff30f;
+        background-color: #811fc8;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .btn-equal {
+        color:#fef029;
+        background-color: #520db2;
+        padding: 50px 20px;
+        border-radius: 10px;
+        height: 130px;
+    }
+    /*Dark theme */
+    &.dark {
+        background-color: #0b0b32;
+        #display {
+            background-color: #251742;
+            color: #5050e2;
+        }
+        #clear{
+            background-color: cadetblue;
+            color: #fef029;
+        }
+        .btn-equal {
+            background-color: #fef029;
+            color: #000066;
+        }
+        .btn-number {
+            background-color: #37ff76;
+            color: #2064eb;
+        }
+        .btn-operador {
+            background-color:#ea59d9;
+            color:#5c3687;
+        }
+        .btn-numberoperador {
+            background-color: #f8ba68;
+        }
+
+
+    }
+}
+.theme-toggler {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 1;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: rgb(103, 21, 226);
+        z-index: -1;
+    }
+}
+.theme-toggler .active {
+    &::before {
+        background-color: #ffffff;
+
+    }
+}
+
+
+
+
+
+
+
