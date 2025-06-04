@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  rgb(254, 255, 195); 
+}
+
+header > img {
+    display: block;
+    padding: 1rem;
+    margin: auto;
+
+}
+
+nav {
+    display: flex;
+    background-color: rgb(247, 202, 90);  
+}
+nav > ul{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    margin: 0.5rem 1rem 0.5rem;
+}
+
+nav li a {
+    display: flex;
+    flex-shrink: 1;
+    text-decoration: none;
+    color: rgb(7, 46, 16);
+    font-family: "Markazi Text", serif;;
+    font-size: 1.3rem;
+    font-weight: 600;
+   
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    color: rgb(155, 78, 6);
+}
+
+.btnctaheader{
+    display: flex;
+    padding: 1rem;
+    background-color: rgb(86, 163, 96);
+    color: aliceblue;
+    border: none;
+    border-radius: 0.5rem;
+     font-family: "Markazi Text", serif;;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.btnctaheader:hover {
+    background-color: brown;
+    transition: 0.8s;
+
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+
+section {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    height: 10rem;
+    background-image: url("./img/header.jpg");
+      background-color: rgb(104, 80, 80);
+      background-blend-mode: overlay;
+      background-repeat: no-repeat;
+      background-size: cover;
+    text-shadow: 1px 1px 15px rgb(25, 24, 49); ;
+    font-size: 3rem;
+}
+
+section[class="cards"] > article {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(224, 241, 241);
+    border: 1px solid rgb(221, 224, 224);
+    margin: 0.5rem;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  
+}
+article {
+    flex: 1;
+}
+
+article h2, img, p {
+    padding-bottom: 2rem;
+}
+article img {
+    display: flex;
+    width: 100%;
+    flex-grow: 1 1;
+    
+}
+
+footer{
+    display: flex;
+    background-color: rgb(221, 215, 164);
+}
+
+footer div {
+    flex: 1;
+
+}
+
+.footerlogo {
+    display: flex;
+    justify-content: end;
+    margin: 1rem;
+}
+.copy{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0.5rem 2rem 0.5rem;
+    color: rgb(53, 70, 85);
+   
+}
+
