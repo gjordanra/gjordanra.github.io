@@ -1,0 +1,102 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tone & Language Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            width: 400px; /* Fixed width for the popup */
+            min-height: 300px;
+            padding: 1rem;
+            background-color: #f8fafc; /* Light blue-gray background */
+        }
+        textarea {
+            resize: vertical;
+        }
+        /* Custom scrollbar for textareas */
+        textarea::-webkit-scrollbar {
+            width: 8px;
+        }
+        textarea::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        textarea::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        textarea::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+    </style>
+</head>
+<body class="p-4 bg-gray-50 text-gray-800">
+    <div class="container mx-auto">
+        <h1 class="text-2xl font-bold text-center mb-4 text-indigo-700">Text Converter</h1>
+
+        <div class="mb-4">
+            <label for="inputText" class="block text-sm font-medium text-gray-700 mb-1">Paste your paragraph here:</label>
+            <textarea id="inputText"
+                      class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out"
+                      rows="5"
+                      placeholder="Type or paste your text..."></textarea>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mb-4">
+            <div>
+                <label for="languageSelect" class="block text-sm font-medium text-gray-700 mb-1">Select Language:</label>
+                <select id="languageSelect"
+                        class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out bg-white">
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                </select>
+            </div>
+            <div>
+                <label for="toneSelect" class="block text-sm font-medium text-gray-700 mb-1">Select Tone of Voice:</label>
+                <select id="toneSelect"
+                        class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out bg-white">
+                    <option value="Professional">Professional</option>
+                    <option value="Friendly">Friendly</option>
+                    <option value="Formal">Formal</option>
+                    <option value="Informal">Informal</option>
+                    <option value="Empathetic">Empathetic</option>
+                    <option value="Authoritative">Authoritative</option>
+                    <option value="Humorous">Humorous</option>
+                    <option value="Concise">Concise</option>
+                    <option value="Detailed">Detailed</option>
+                    <option value="Enthusiastic">Enthusiastic</option>
+                    <option value="Sarcastic">Sarcastic</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="convertButton"
+                class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-150 ease-in-out mb-4">
+            Convert Text
+        </button>
+
+        <div id="loadingIndicator" class="hidden text-center text-indigo-600 mb-4">
+            <svg class="animate-spin h-5 w-5 text-indigo-600 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <p class="mt-2">Converting...</p>
+        </div>
+
+        <div class="mb-4">
+            <label for="outputText" class="block text-sm font-medium text-gray-700 mb-1">Converted Text:</label>
+            <textarea id="outputText"
+                      class="w-full p-2 border border-gray-300 rounded-md shadow-sm bg-gray-100 focus:outline-none"
+                      rows="7"
+                      readonly
+                      placeholder="Your converted text will appear here..."></textarea>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
