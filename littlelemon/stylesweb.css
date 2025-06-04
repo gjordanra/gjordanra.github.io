@@ -99,6 +99,12 @@ section[class="cards"] > article {
     font-size: 1.2rem;
   
 }
+section[class="cards"] > article:hover {
+    box-shadow: 10px 10px 10px rgb(150, 150, 201);
+    transform: rotate(-5deg);
+    transition: 0.8s;
+
+}
 article {
     flex: 1;
 }
